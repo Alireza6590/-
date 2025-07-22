@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Prank Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300FF00'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z'/%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body>
+    <div class="container" id="intro-screen">
+        <div class="header-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00FF00">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/>
+            </svg>
+            <span>SecurITy Breach v3.1</span>
+        </div>
+        <div class="content">
+            <pre class="terminal-text">
+Initializing secure connection...
+Establishing encrypted tunnel...
+Verifying system integrity...
+Accessing core functionalities...
+Ready for operation.
+            </pre>
+            <button class="btn large-btn" id="start-hack-btn">Hack</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="target-selection-screen">
+        <div class="header-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00FF00">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/>
+            </svg>
+            <span>SecurITy Breach v3.1</span>
+        </div>
+        <div class="content">
+            <pre class="terminal-text">
+Please select a target application or enter a phone number to compromise.
+            </pre>
+            <input type="text" id="phone-number-input" class="input-field" placeholder="شماره قربانی را وارد کنید (اختیاری)">
+            
+            <div class="app-list">
+                </div>
+            
+            <button class="btn large-btn" id="initiate-hack-btn">Hack Selected Target</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="hacking-screen">
+        <div class="header-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00FF00">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/>
+            </svg>
+            <span>SecurITy Breach v3.1</span>
+        </div>
+        <div class="content">
+            <pre class="terminal-output" id="hacking-output"></pre>
+        </div>
+    </div>
+
+    <div class="container hidden" id="success-screen">
+        <div class="header-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00FF00">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/>
+            </svg>
+            <span>SecurITy Breach v3.1</span>
+        </div>
+        <div class="content center-content">
+            <img id="hacked-app-icon" src="" alt="Hacked App Icon" class="app-icon large-icon">
+            <h2 class="success-message">Hack Successful!</h2>
+            <p class="terminal-text">Access Granted. All data extracted. Target compromised.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+          </html>
+          
